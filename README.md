@@ -1,7 +1,7 @@
 # Simon's problem
 
 ## The problem that this algorithm aims to solve  
- This algorithm can be used to get the period of a randomized function. For example, suppose there is a function <img src="https://latex.codecogs.com/gif.latex?f(x)" title="f(x)" /> and a value <img src="https://latex.codecogs.com/gif.latex?r" title="r" />, which satisfies <img src="https://latex.codecogs.com/gif.latex?f(x)&space;=&space;f(x&plus;r)(r\neq0)" title="f(x) = f(x+r)(r\neq0)" />.    
+ This algorithm can be used to get the period of a randomized function. For example, suppose there is a function <img src="https://latex.codecogs.com/gif.latex?f(x)" title="f(x)" /> and a value <img src="https://latex.codecogs.com/gif.latex?r" title="r" />, which satisfies <img src="https://latex.codecogs.com/gif.latex?f(x)&space;=&space;f(x&plus;r)(r\neq|00\rangle)" title="f(x) = f(x+r)(r\neq|00\rangle)" />.    
 
 ## Mathematical explanation  
  Let's say the value I would like to get is <img src="https://latex.codecogs.com/gif.latex?|10\rangle" title="|10\rangle" />.  
@@ -58,4 +58,7 @@ This is the result on QASM simulator.
 ![screen shot 2019-01-07 at 8 40 25 pm](https://user-images.githubusercontent.com/45162150/50766446-95546b00-12bc-11e9-9c7e-8d3117cc20fd.png)  
 
 This is the result on a real device(ibmq_20_tokyo)  
+![screen shot 2019-01-07 at 8 47 01 pm](https://user-images.githubusercontent.com/45162150/50766660-6ee2ff80-12bd-11e9-9c2e-91098b40ffb6.png)  
+
+As you can see, we get <img src="https://latex.codecogs.com/gif.latex?|00\rangle" title="|00\rangle" /> and <img src="https://latex.codecogs.com/gif.latex?|10\rangle" title="|10\rangle" /> 50% of probability each.  However, because <img src="https://latex.codecogs.com/gif.latex?r&space;\neq&space;|00\rangle" title="r \neq |00\rangle" />, the answer is <img src="https://latex.codecogs.com/gif.latex?|10\rangle" title="|10\rangle" />.
 
