@@ -54,3 +54,8 @@ for j in range(cn):
 ```  
 
 ## Result  
+This is the result on QASM simulator.  
+![screen shot 2019-01-07 at 8 40 25 pm](https://user-images.githubusercontent.com/45162150/50766446-95546b00-12bc-11e9-9c7e-8d3117cc20fd.png)  
+
+This is the result on a real device(ibmq_20_tokyo)  
+
