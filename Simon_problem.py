@@ -4,8 +4,8 @@ from qiskit.qasm import pi
 from qiskit.tools.visualization import plot_histogram, circuit_drawer
 import numpy as np
 
-APItoken = "fa84f6833961480e40f615777a497a80f45e9fbf83266bf7431ef468a80d425fbd31080f4483dec301fc05ffe67c178c9b52c4b90bb37b20f10ca68cda09386f"
-url = "https://q-console-api.mybluemix.net/api/Hubs/ibm-q-keio/Groups/keio-internal/Projects/qip-students"
+APItoken = "Replace me"
+url = "Replace me"
 IBMQ.enable_account(APItoken, url)
 
 IBMQ.backends()
@@ -34,7 +34,8 @@ for j in range(upper_qn):
 
 for j in range(cn):
 	qc.measure(q[cn-j-1],c[j])
-
+# Put a real device first and a simulator after that.
+# I put ibmq_20_tokyo because I'm allowed to use it.
 backends = ['ibmq_20_tokyo', 'qasm_simulator']
 #Use this for the actual machine
 backend_sim = IBMQ.get_backend(backends[0])
